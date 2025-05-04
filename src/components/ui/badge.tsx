@@ -15,6 +15,11 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
+         // Added variants based on theme
+        success: // Using secondary as a base for soft blue
+          "border-transparent bg-secondary text-secondary-foreground",
+        warning: // Using accent (teal)
+           "border-transparent bg-accent text-accent-foreground",
       },
     },
     defaultVariants: {
